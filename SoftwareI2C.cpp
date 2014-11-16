@@ -30,7 +30,11 @@ SWI2C::SWI2C(uint8_t pinSDA,uint8_t pinSCL){
 	_pinSCL = pinSCL;
 }
 
-
+void SWI2C::setI2Cpins(uint8_t pinSDA,uint8_t pinSCL)
+{
+	_pinSDA = pinSDA;
+	_pinSCL = pinSCL;
+}
 
 // setup routine
 void SWI2C::begin() {

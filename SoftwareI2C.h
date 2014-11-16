@@ -28,6 +28,7 @@ public:
 	void i2cStop();							// Stop Data Transfer
 	uint8_t i2cWrite(uint8_t txData);		// write data byte
     uint8_t i2cRead(uint8_t ack);			// Read data byte        
+	void setI2Cpins(uint8_t pinSDA,uint8_t pinSCL);
 	
 private:
 	void i2cInit();							// Init the ports and the default pin state
